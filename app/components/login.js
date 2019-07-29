@@ -17,7 +17,7 @@ import {
 } from "react-native";
 
 import { Actions } from "react-native-router-flux";
-import AsyncStorage from "@react-native-community/async-storage";
+// import AsyncStorage from "@react-native-community/async-storage";
 import axios from "axios";
 
 export default class Loginform extends React.Component {
@@ -46,7 +46,7 @@ export default class Loginform extends React.Component {
       .then(function(response) {
         console.log("Response data from login:", response);
 
-        AsyncStorage.setItem('user', JSON.stringify(response.data));
+        // AsyncStorage.setItem('user', JSON.stringify(response.data));
       })
       .catch(function(error) {
         console.log(error);
