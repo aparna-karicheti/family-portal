@@ -11,12 +11,14 @@ import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
  import Main from './app/components/Main';
 import Routes from './app/pages/Routes';
+import FamilyMemDashboard from './app/components/familymemberdashboard';
+import {StackNavigator} from 'react-navigation';
 
 export default class App extends React.Component {
   render() {
   return (
     <View style={styles.container}>
-      <Routes/>
+      <FamilyMemDashboard/>
     </View>
 
    );
@@ -26,10 +28,10 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
       flex:1,
-      backgroundColor: '#36485f',
-      justifyContent:'center',
-      paddingLeft:60,
-      paddingRight:60
+      backgroundColor: 'orange',
+      // justifyContent:'center',
+      // paddingLeft:60,
+      // paddingRight:60
 
   }
 })
